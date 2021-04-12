@@ -3,14 +3,15 @@ class Play extends Phaser.Scene {
         super("playScene");
     }
 
-    preload() {
-        // load images/tile sprites
+    preload(){
+        this.load.image('starfield', './assets/starfield.png');
         this.load.image('rocket', './assets/rocket.png');
         this.load.image('spaceship', './assets/spaceship.png');
-        this.load.image('starfield', './assets/starfield.png');
-      }
+        //load spritesheet
+        this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
+        }
 
-      create() {
+    create() {
         // Starfield bacground
         this.starfield = this.add.tileSprite(0,0,640,480, 'starfield').setOrigin(0,0);
         
