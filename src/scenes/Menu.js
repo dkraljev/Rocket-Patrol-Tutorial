@@ -34,7 +34,7 @@ class Menu extends Phaser.Scene {
         menuConfig.backgroundColor = '#98ECBE';
         menuConfig.color = '#638CB0';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 
-            'Press anArrow Key to Start', menuConfig).setOrigin(0.5);
+            'Press an Arrow Key to Start', menuConfig).setOrigin(0.5);
 
 
          // define move keys
