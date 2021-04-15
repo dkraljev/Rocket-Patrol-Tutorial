@@ -16,8 +16,8 @@ class Menu extends Phaser.Scene {
          let menuConfig = {
             fontFamily: 'Courier',
             fontSize: '28px',
-            backgroundColor: '#b2d4cd',
-            color: '#001020',
+            backgroundColor: '#85EACD',
+            color: '#38816C',
             align: 'right',
             padding: {
                 top: 5,
@@ -31,8 +31,8 @@ class Menu extends Phaser.Scene {
             menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2, 'Use <--> arrows to move & (F) to fire', 
             menuConfig).setOrigin(0.5);
-        menuConfig.backgroundColor = '#26004d';
-        menuConfig.color = '#000';
+        menuConfig.backgroundColor = '#98ECBE';
+        menuConfig.color = '#638CB0';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 
             'Press anArrow Key to Start', menuConfig).setOrigin(0.5);
 
